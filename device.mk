@@ -10,6 +10,9 @@ $(call inherit-product, device/xiaomi/sm8450-common/common.mk)
 # Inherit from the proprietary version
 $(call inherit-product, vendor/xiaomi/mondrian/mondrian-vendor.mk)
 
+# Inherit from MiuiCamera setup
+$(call inherit-product, device/xiaomi/miuicamera-mondrian/device.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     firmware_aw_cali.bin_symlink
