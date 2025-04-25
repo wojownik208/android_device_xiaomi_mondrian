@@ -13,6 +13,9 @@ $(call inherit-product, vendor/xiaomi/mondrian/mondrian-vendor.mk)
 # Inherit from MiuiCamera setup
 $(call inherit-product, device/xiaomi/miuicamera-mondrian/device.mk)
 
+# DeviceAsWebcam
+TARGET_BUILD_DEVICE_AS_WEBCAM := true
+
 # Logging
 SPAMMY_LOG_TAGS := \
     MiStcImpl \
