@@ -8,6 +8,7 @@
 $(call inherit-product, device/xiaomi/mondrian/device.mk)
 
 # Inherit from common lineage configuration
+TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := lineage_mondrian
@@ -23,3 +24,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     SystemName=mondrian_global
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+
+TARGET_BOOT_ANIMATION_RES := 1440
+TARGET_ENABLE_BLUR := true
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
