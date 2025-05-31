@@ -11,7 +11,7 @@ $(call inherit-product, device/xiaomi/mondrian/device.mk)
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_mondrian
+PRODUCT_NAME := derp_mondrian
 PRODUCT_DEVICE := mondrian
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := POCO
