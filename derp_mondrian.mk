@@ -7,9 +7,10 @@
 # Inherit from mondrian device
 $(call inherit-product, device/xiaomi/mondrian/device.mk)
 
-# Inherit from common lineage configuration
+# Inherit from common DerpFest configuration
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+
 
 PRODUCT_NAME := derp_mondrian
 PRODUCT_DEVICE := mondrian
